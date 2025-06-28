@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guacdoodle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+      background-color: black;
+      color: white;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .nav a:hover {
+      opacity: 0.5;
+    }
+    .hero {
+      background-color: #111;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: url("/assets/home.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    .hero .listen-button {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .hero .listen-button a {
+      color: white;
+      text-decoration: underline;
+    }
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      padding: 5px;
+    }
+    .grid-item {
+      position: relative;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+    .footer-column {
+      margin: 10px 20px;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .footer a:hover {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div>
+      <a href="#">MUSIC</a>
+      <a href="#">SHOP</a>
+    </div>
+    <div>
+      <span>GUACDOODLE</span>
+    </div>
+    <div>
+      <a href="#">VIDEO</a>
+      <a href="#">NETWORK</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="listen-button">
+      <a href="https://example.com">LISTEN</a>
+    </div>
+  </div>
+
+  <div class="grid-section">
+    <div class="grid-item"><img src="/assets/image1.png" alt="Placeholder 1"></div>
+    <div class="grid-item"><img src="/assets/image2.png" alt="Placeholder 2"></div>
+    <div class="grid-item"><img src="/assets/image3.png" alt="Placeholder 3"></div>
+    <div class="grid-item"><img src="/assets/image4.png" alt="Placeholder 4"></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-column">
+      <strong>SOCIAL</strong>
+      <a href="#">INSTAGRAM</a>
+      <a href="#">YOUTUBE</a>
+      <a href="#">X.COM</a>
+      <a href="#">FACEBOOK</a>
+    </div>
+    <div class="footer-column">
+      <strong>INFO</strong>
+      <a href="#">PRESS KIT</a>
+      <a href="#">CONTACT</a>
+    </div>
+    <div class="footer-column">
+      <strong>CONNECT</strong>
+      <a href="#">DISCORD</a>
+      <a href="#">PATREON</a>
+      <a href="#">BANDCAMP</a>
+      <a href="#">SHOP</a>
+    </div>
+  </div>
+</body>
+</html>
