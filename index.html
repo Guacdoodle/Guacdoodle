@@ -1,135 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guacdoodle</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: monospace;
-      background-color: black;
-      color: white;
-    }
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      font-size: 14px;
-    }
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .nav a:hover {
-      opacity: 0.5;
-    }
-    .hero {
-      background-color: #111;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-image: url("/assets/home.jpg");
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-    }
-    .hero .listen-button {
-      margin-top: 30px;
-      font-size: 20px;
-    }
-    .hero .listen-button a {
-      color: white;
-      text-decoration: underline;
-    }
-    .grid-section {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      padding: 5px;
-    }
-    .grid-item {
-      position: relative;
-    }
-    .grid-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .footer {
-      background-color: black;
-      color: white;
-      padding: 30px 20px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      flex-wrap: wrap;
-    }
-    .footer-column {
-      margin: 10px 20px;
-    }
-    .footer a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .footer a:hover {
-      opacity: 0.5;
-    }
-  </style>
-</head>
-<body>
-  <div class="nav">
-    <div>
-      <a href="#">MUSIC</a>
-      <a href="#">SHOP</a>
-    </div>
-    <div>
-      <span>GUACDOODLE</span>
-    </div>
-    <div>
-      <a href="#">VIDEO</a>
-      <a href="#">NETWORK</a>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#060808" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <div class="hero">
-    <div class="listen-button">
-      <a href="https://example.com">LISTEN</a>
-    </div>
-  </div>
+    <title>Guacdoodle | Multi-Genre EDM DJ &amp; Producer from Iowa</title>
+    <meta name="description" content="Guacdoodle is a multi-genre EDM DJ and producer from Iowa playing dubstep, bass music and drum &amp; bass. Stream sets, see live show photos and book Guac." />
+    <link rel="canonical" href="https://guacdoodle.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Guacdoodle" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://guacdoodle.com/" />
+    <meta property="og:title" content="Guacdoodle | Multi-Genre EDM DJ &amp; Producer from Iowa" />
+    <meta property="og:description" content="Guacdoodle is a multi-genre EDM DJ and producer from Iowa playing dubstep, bass music and drum &amp; bass. Stream sets, see live show photos and book Guac." />
+    <meta property="og:image" content="https://guacdoodle.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Guacdoodle DJing with arms spread wide over the decks under violet light" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@guacdoodle" />
+    <meta name="twitter:title" content="Guacdoodle | Multi-Genre EDM DJ &amp; Producer from Iowa" />
+    <meta name="twitter:description" content="Guacdoodle is a multi-genre EDM DJ and producer from Iowa playing dubstep, bass music and drum &amp; bass. Stream sets, see live show photos and book Guac." />
+    <meta name="twitter:image" content="https://guacdoodle.com/og-image.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"MusicGroup","name":"Guacdoodle","alternateName":"Guac","url":"https://guacdoodle.com/","image":"https://guacdoodle.com/og-image.jpg","description":"Guacdoodle is a multi-genre EDM DJ and producer from Iowa playing dubstep, bass music and drum & bass. Stream sets, see live show photos and book Guac.","genre":["EDM","Dubstep","Bass music","Drum and bass"],"email":"guacdoodle@gmail.com","foundingLocation":{"@type":"Place","name":"Iowa, United States"},"sameAs":["https://soundcloud.com/guac-doodle","https://www.instagram.com/guacdoodle","https://youtube.com/@guacdoodle","https://x.com/guacdoodle","https://www.facebook.com/share/19geoKv7vr/","https://www.twitch.tv/guacdoodle","https://www.tiktok.com/@guacdoodle","https://linktr.ee/guacdoodle"]}</script>
 
-  <div class="grid-section">
-    <div class="grid-item"><img src="/assets/image1.png" alt="Placeholder 1"></div>
-    <div class="grid-item"><img src="/assets/image2.png" alt="Placeholder 2"></div>
-    <div class="grid-item"><img src="/assets/image3.png" alt="Placeholder 3"></div>
-    <div class="grid-item"><img src="/assets/image4.png" alt="Placeholder 4"></div>
-  </div>
-
-  <div class="footer">
-    <div class="footer-column">
-      <strong>SOCIAL</strong>
-      <a href="#">INSTAGRAM</a>
-      <a href="#">YOUTUBE</a>
-      <a href="#">X.COM</a>
-      <a href="#">FACEBOOK</a>
-    </div>
-    <div class="footer-column">
-      <strong>INFO</strong>
-      <a href="#">PRESS KIT</a>
-      <a href="#">CONTACT</a>
-    </div>
-    <div class="footer-column">
-      <strong>CONNECT</strong>
-      <a href="#">DISCORD</a>
-      <a href="#">PATREON</a>
-      <a href="#">BANDCAMP</a>
-      <a href="#">SHOP</a>
-    </div>
-  </div>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Applies the saved theme before first paint so there is no flash of the
+      // wrong palette. No attribute at all means "follow the OS", which the CSS
+      // handles via prefers-color-scheme.
+      try {
+        var t = localStorage.getItem('guacdoodle-theme')
+        if (t === 'dark' || t === 'light') {
+          document.documentElement.setAttribute('data-theme', t)
+        }
+      } catch (e) {
+        /* private mode / blocked storage — fall back to the OS preference */
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BlERG5Vx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ByYPvUik.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>Guacdoodle — DJ · Producer · Designer · Vibe</h1>
+      <p>Guacdoodle is a multi-genre EDM DJ and producer from Iowa — part bass-music selector, part dancer, all vibe.</p>
+      <p>Guac's sets swing from heavy dubstep and bass music to drum &amp; bass and flipped bootlegs — from Cue the Bass nights at Sam's Place in Ames, Iowa, to back-to-backs with AlienBoii in Minneapolis and the ADAPT DOODLE debut with Adapt Idol at Lost Woods Music Festival 2026 in Cedar Falls.</p>
+      <p>Off the decks, Guac is a designer, promoter, dancer and flow artist — the creator of Dubilluminaughty, an underground movement built on peace, love and empowerment, and GuacdoodleS, a brand raising the vibration through music, art, stories, goods and events. Catch the live streams, the 2-hour song challenges and the Chasing Dreams IRL interviews on Twitch and YouTube.</p>
+      <p>Booking: <a href="mailto:guacdoodle@gmail.com">guacdoodle@gmail.com</a></p>
+      <ul>
+        <li><a href="https://soundcloud.com/guac-doodle">SoundCloud</a></li>
+        <li><a href="https://www.instagram.com/guacdoodle">Instagram</a></li>
+        <li><a href="https://youtube.com/@guacdoodle">YouTube</a></li>
+        <li><a href="https://x.com/guacdoodle">X</a></li>
+        <li><a href="https://www.facebook.com/share/19geoKv7vr/">Facebook</a></li>
+        <li><a href="https://www.twitch.tv/guacdoodle">Twitch</a></li>
+        <li><a href="https://www.tiktok.com/@guacdoodle">TikTok</a></li>
+        <li><a href="https://linktr.ee/guacdoodle">Linktree</a></li>
+      </ul>
+    </noscript>
+  </body>
 </html>
